@@ -13,7 +13,7 @@ body {
   color: aliceblue;
   font-weight: 700;
   font-size: 24px;
-  overflow: hidden;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +39,23 @@ header {
   background-attachment: fixed;
   transform: scale(1.1);
 }
+
+button:hover {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+
+button:active {
+  text-decoration: none;
+  outline: none;
+}
+
+p {
+  text-decoration: none;
+  color: aquamarine;
+  text-align: center;
+}
+
+/* header */
 .nav {
   background-color: rgba(240, 248, 255, 0.233);
   display: flex;
@@ -81,15 +98,6 @@ button {
   font-size: 20px;
 }
 
-button:hover {
-  background-color: rgba(0, 255, 255, 0.8);
-}
-
-button:active {
-  text-decoration: none;
-  outline: none;
-}
-
 .welcome {
   text-align: center;
   transform: translate(0%, 150%);
@@ -101,7 +109,27 @@ button:active {
 }
 .btn1 {
   padding-right: 20px;
+  position: static;
 }
 .btn2 {
   padding-left: 20px;
+  position: static;
+}
+
+/* About Section */
+
+.section-about {
+  padding-top: 50px;
+  background-color: aliceblue;
+}
+.about-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-img {
+  height: 100px;
+  width: auto;
+  text-decoration: none;
 }
